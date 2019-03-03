@@ -21,7 +21,7 @@ public class Rosary {
 
 
         if (counter == 0)
-            return "Krzyżyk - wierzę w Boga";
+            return "Krzyżyk - Intencja - „Ten różaniec odmawiam na Twoją cześć, Królowo Różańca świętego”. Wierzę w Boga";
         if (counter == 1)
             return "Pierwszy paciorek - Ojcze nasz";
         if (counter > 1 && counter < 5)
@@ -30,16 +30,16 @@ public class Rosary {
             return "Ojcze Nasz, Tajemnica 1";
         if (counter > 5 && counter < 61) {
             if (counter == 16 || counter == 27 || counter == 38 || counter == 49)
-                return "Chwała ojcu po tajemnicy nr: " + ((counter - 5) % 10) + ". Ojcze nasz";
+                return "Chwała ojcu po tajemnicy nr: " + ((counter - 5) % 10) + ". Tajemnica: " + (((counter - 5) % 10)+1) +". Ojcze nasz";
             else if (counter == 60)
-                return "Chwała ojcu po " + ((counter - 5) % 10) + " dziesiątce. Koniec. Znak krzyża.";
+                return "Chwała ojcu po tajemnicy nr: " + ((counter - 5) % 10) + ". Koniec. Znak krzyża.";
             else
                 return "Zdrowaśka numer: " + ((counter - 5) % 11);
         }
 
         else {
             setCounter(0);
-            return "Koniec różańca. Kliknij aby zacząć od nowa";
+            return "Krzyżyk - wierzę w Boga";
 
         }
 
